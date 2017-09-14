@@ -230,6 +230,7 @@ function createGruntOption(source, grunt, gruntFile, logger) {
             removeComments: boolOrUndef(source, "removeComments"),
             sourceMap: boolOrUndef(source, "sourceMap"),
             declaration: boolOrUndef(source, "declaration"),
+            types: source.types,
             out: singleFile ? dest : undefined,
             outDir: singleFile ? undefined :
                 keepDirectoryHierarchy ? undefined : dest,
